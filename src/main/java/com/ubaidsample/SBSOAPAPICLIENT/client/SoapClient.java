@@ -23,6 +23,6 @@ public class SoapClient {
 
 	public ItemResponse getItemInfo(ItemRequest itemRequest){
 		webServiceTemplate = new WebServiceTemplate(jaxb2Marshaller);
-		return (ItemResponse) webServiceTemplate.marshalSendAndReceive("http://localhost:8080/ws",itemRequest);
+		return (ItemResponse) webServiceTemplate.marshalSendAndReceive("http://localhost:8020/ws",itemRequest);
 	}
 }
